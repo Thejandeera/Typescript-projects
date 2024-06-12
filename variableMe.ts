@@ -10,7 +10,7 @@ userId.toFixed()
 
 //boolean
 
-let isLoggedIn : boolean = false;
+let isLoggedIn : boolean = true;
 
 //any
 
