@@ -1,6 +1,6 @@
 const user = {
     name : "thejan",
-    email : "thejan@gmail.com",
+    email : "thejan1010@gmail.com",
     isActive : true
 }
 
