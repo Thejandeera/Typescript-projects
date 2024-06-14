@@ -8,7 +8,18 @@ interface Users {
     getCoupon(couponname:string, value : number) :number
 }
 
-const thejand : Users = {dbid:22, email:"thejan@.com", userid : 2211,
+interface Users{
+    githubToken : number
+    
+}
+
+interface Admin extends Users {
+    role : "admin" | "ta" | "learner"
+}
+
+const thejand : Users | Admin = {dbid:22, email:"thejan@.com", userid : 2211,
+    githubToken :223 ,
+    role : "admin" ,
     startTrial : () => {
         return "trial started"
     },
