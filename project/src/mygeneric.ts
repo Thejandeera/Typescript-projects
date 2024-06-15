@@ -25,3 +25,49 @@ interface bottle {
 }
 
 // identityFour<bottle>({})
+
+function getSearchProducts<T>(products : T[]):T{
+    // do some database operations
+    const myIndex =3
+    return products[myIndex]
+}
+
+
+const getMoreSearchProducts = <T>(products : T[]):T => {
+    // do some database operations
+    const myIndex = 4
+    return products[myIndex]
+}
+
+interface dataBase {
+    connections : string,
+    userName : string,
+    passwprd : string
+}
+
+function anotherFunction<T,U extends dataBase>(valone:T,valtwo:U):object{
+    return {
+        valone,
+        valtwo
+    }
+}
+
+// anotherFunction(3,{})
+
+interface quiz {
+    name: string,
+    type : string
+}
+interface course {
+    name : string,
+    author : string,
+    subject : string
+}
+
+class sellable<T>{
+    public cart : T[]= []
+
+    addToCart(products: T){
+        this.cart.push(products)
+    }
+}
